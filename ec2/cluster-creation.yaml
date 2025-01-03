@@ -96,3 +96,6 @@ Following these steps will set up a basic Kubernetes cluster in AWS using kubead
 
 Run the command below in the master node to reprint join command for worker nodes:
 kubeadm token create --print-join-command
+
+kubeadm join 172.31.25.217:6443 --token rzw3r8.1zsw99zkvftabvn8 \
+        --discovery-token-ca-cert-hash sha256:6dd0feaf246d3a97863baedc1a2b869c5f76c7363f53c59248fd241f5d47d8eb
